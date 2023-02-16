@@ -1,4 +1,4 @@
-#include <stdio.h> 
+#include <stdio.h>
 /**
 * main - the function that display information
 * Return: 0 (sucess)
