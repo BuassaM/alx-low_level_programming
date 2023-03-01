@@ -25,6 +25,7 @@ for (index_2 = 0; src[index_2] != '\0' && index_2 < n; index_2++)
 dest[index_1 + index_2] = src[index_2]; /* concat strings */
 }
 
-dest[index_1 + index_2] = '\0'; /* add null character to concat strings */
+dest[index_1 + index_2] = '\0'; 
+/* add null character to concat strings */
 return (dest);
 }
