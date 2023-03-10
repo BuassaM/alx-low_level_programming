@@ -1,15 +1,10 @@
 #include "main.h"
-/**
- * _isupper - checks if a given character is uppercase
- * @c: character to check
- *
- * Return: 1 if it is, 0 if otherwise
- */
-int _isupper(int c)
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+int _isdigit(int c)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (1);
-
-	else
-		return (0);
+return isdigit(c);
 }
+
