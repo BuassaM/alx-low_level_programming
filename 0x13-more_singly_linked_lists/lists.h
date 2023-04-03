@@ -1,27 +1,35 @@
-#ifndef _LISTS_H_
-#define _LISTS_H_
+#ifndef _LISTS_
+#define _LISTS_
 
-/* standard library functions */
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 /**
  * struct listint_s - singly linked list
  * @n: integer
  * @next: points to the next node
  *
- *  Structure for singly linked list node 
- *
+ *  singly linked list node structure
  */
 typedef struct listint_s
 {
 int n;
 struct listint_s *next;
-listint_t;} 
-/* main function */
+} listint_t;
 
-int _putchar(char);
+/**
+ * struct listp_s - singly linked list
+ * @p: pointers of nodes
+ * @next: points to the next node
+ *
+ * singly linked list of pointers
+ */
+typedef struct listp_s
+{
+void *p;
+struct listp_s *next;
+} listp_t;
+
 size_t print_listint(const listint_t *h);
 size_t listint_len(const listint_t *h);
 listint_t *add_nodeint(listint_t **head, const int n);
@@ -37,8 +45,5 @@ listint_t *reverse_listint(listint_t **head);
 size_t print_listint_safe(const listint_t *head);
 size_t free_listint_safe(listint_t **h);
 listint_t *find_listint_loop(listint_t *head);
-const listint_t **memalloc(const listint_t **list, size_t size,
-const listint_t *new);
-listit_t **alloc(listint_t **list, size_t size, listint_t *new);
 
-#endif /* _LISTS_H_ */
+#endif
