@@ -18,9 +18,8 @@ typedef struct listint_s
 {
 int n;
 struct listint_s *next;
-listint_t;
-} 
-/* main function prototypes */
+listint_t;} 
+/* main function */
 
 int _putchar(char);
 size_t print_listint(const listint_t *h);
