@@ -17,9 +17,10 @@
 typedef struct listint_s
 {
 int n;
-struct listint_s *next;
-} listint_t;
 
+struct listint_s *next;
+listint_t;
+} 
 /* main function prototypes */
 
 int _putchar(char);
