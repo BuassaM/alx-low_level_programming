@@ -17,7 +17,6 @@
 typedef struct listint_s
 {
 int n;
-
 struct listint_s *next;
 listint_t;
 } 
@@ -41,6 +40,6 @@ size_t free_listint_safe(listint_t **h);
 listint_t *find_listint_loop(listint_t *head);
 const listint_t **memalloc(const listint_t **list, size_t size,
 const listint_t *new);
-listint_t **alloc(listint_t **list, size_t size, listint_t *new);
+listit_t **alloc(listint_t **list, size_t size, listint_t *new);
 
 #endif /* _LISTS_H_ */
