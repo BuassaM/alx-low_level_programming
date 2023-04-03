@@ -13,11 +13,9 @@ size_t nodesnos = 0;
 while (m != NULL)
 {
 printf("%d\n", m->n);
-
 nodesnos++;
 m = m->next;
 }
-
 return (nodesnos);
 }
 
