@@ -11,18 +11,28 @@
 unsigned int binary_to_uint(const char *t)
 {
 unsigned int d = 0;
-if (t == NULL)
+
+int bin;
+int btwo;
+
+if (t==NULL)
 return (0);
 
-while (t && *t)
+
+for (bin = 0; t[bin] != '\0'; bin++)
+;
+
+for (bin--, btwo = 1; bin >= 0; bin--, btwo *= 2)
 {
-
-if (*t < '0' || *t > '1')
+if (t[bin] != '0' && t[bin] != '1')
+{
 return (0);
+}
 
-d = decimal * 2 + *t - '0';
-t++;
-
+if (t[bin] & 1)
+{
+d += btwo;
+}
 }
 
 return (d);
