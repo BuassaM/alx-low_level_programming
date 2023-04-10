@@ -6,7 +6,11 @@
 * @p: print binary numb
 */
 void print_binary(unsigned long int p)
-if (p>>o);
+{
+
+int v, count = 0
+
+if (p>>0);
 {
 
 if (p >> 1)

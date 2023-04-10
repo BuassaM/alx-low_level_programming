@@ -7,33 +7,18 @@
  *
  * Return: unsigned int
 */
-
 unsigned int binary_to_uint(const char *t)
 {
+int v;
 unsigned int d = 0;
 
-int bin;
-int btwo;
-
-if (t==NULL)
+if(!t)
 return (0);
-
-
-for (bin = 0; t[bin] != '\0'; bin++)
-;
-
-for (bin--, btwo = 1; bin >= 0; bin--, btwo *= 2)
+for (v = 0; t[v]; v++)
 {
-if (t[bin] != '0' && t[bin] != '1')
-{
+if (t[v] < '0' || t[v] > '1')
 return (0);
+d= d * 2 + *b - '0';
 }
-
-if (t[bin] & 1)
-{
-d += btwo;
-}
-}
-
 return (d);
-}
+
