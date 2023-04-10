@@ -9,9 +9,9 @@
  * Return: letters to stdout
  * If 0 return filename NuLL
  */
-size_t read_textfile(const char *filename, size_t letters)
+ssize_t read_textfile(const char *filename, ssize_t letters)
 {
-size_t fno, fnr, fnw;
+ssize_t fno, fnr, fnw;
 char *buff;
 
 if (filename == NULL)
