@@ -14,10 +14,18 @@ unsigned int d = 0;
 
 if(!t)
 return (0);
-for (v = 0; t[v]; v++)
+
+for (v = 0; t[v] != '\0'; v++)
 {
 if (t[v] < '0' || t[v] > '1')
 return (0);
+
+for (v = 0; t[v] != '\0'; v++)
+{
+d <<= 1;
+if (t[v] == '1')
+d += 1;
+
 d= d * 2 + *t - '0';
 }
 return (d);
