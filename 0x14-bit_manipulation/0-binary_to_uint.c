@@ -15,11 +15,10 @@ unsigned int d = 0;
 if(!t)
 return (0);
 
-for (v = 0; t[v] != '\0'; v++)
+for (v = 0; t[v]; v++)
 {
 if (t[v] < '0' || t[v] > '1')
 return (0)
-
 
 d= d * 2 + *t - '0';
 }
