@@ -15,12 +15,13 @@ unsigned int d = 0;
 if(!t)
 return (0);
 
-for (v = 0; t[v]; v++)
-{
+while (t && *t)
+
 if (t[v] < '0' || t[v] > '1')
 return (0)
 
 d= d * 2 + *t - '0';
+d++;
 }
 return (d);
 }
